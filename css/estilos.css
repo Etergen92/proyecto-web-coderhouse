@@ -115,14 +115,26 @@ body{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    margin: 1.5rem;
+    gap: 4.5rem;
+    margin: 2rem;
+    margin-right: 3.5rem;
 }
+
+
 
 .header__navegacion--a{
 
     text-decoration: none;
     color: white;
+    display: inline-block;
+
+}
+
+.header__navegacion--a:hover{
+
+    transform: scale(2, 2);  
+    overflow: hidden;
+
 }
 
 
