@@ -11,49 +11,6 @@ body{
 
 }
 
-.grid-contenedor-padre-inicio{
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 7% 87% 6%;
-    grid-template-areas: 
-        "grid-contenedor-hijo-1"
-        "grid-contenedor-hijo-2"
-        "grid-contenedor-hijo-3";
-}
-
-.grid-contenedor-padre-servicios{
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5% 31% 30% 30% 4%; 
-    grid-template-areas: 
-        "grid-contenedor-hijo-1"
-        "area1"
-        "area2"
-        "area3"
-        "grid-contenedor-hijo-3";
-}
-
-.grid-contenedor-hijo-servicios-1{
-
-    grid-area: area1;
-
-}
-
-.grid-contenedor-hijo-servicios-2{
-
-    grid-area: area2;
-
-}
-
-
-.grid-contenedor-hijo-servicios-3{
-
-    grid-area: area3;
-
-}
-
 .principal__servicios--flex1{
 
     display: flex;
@@ -108,7 +65,7 @@ body{
 .header{
 
     background-color: #6A9C78;
-    grid-area: grid-contenedor-hijo-1;
+
 } 
 
 
@@ -151,7 +108,7 @@ body{
 .principal{
 
     text-align: center;
-    grid-area: grid-contenedor-hijo-2;
+
 }
 
 
@@ -192,7 +149,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* margin-top: 2rem; */
+
 }
 
 
@@ -201,51 +158,6 @@ body{
     border-radius: 4px;
     padding: 0.3rem;
     margin: 0.5rem;
-
-}
-
-.grid-contenedor-padre-nosotros{
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 94px 200px 600px 700px 800px 90px; 
-    grid-template-areas: 
-        "grid-contenedor-hijo-1 grid-contenedor-hijo-1"
-        "areaNosotros1 areaNosotros1"
-        "areaNosotros2 areaNosotros3"
-        "areaNosotros4 areaNosotros4"
-        "areaNosotros5 areaNosotros5"
-        "grid-contenedor-hijo-3 grid-contenedor-hijo-3";
-}
-
-.principal__nosotros--seccion1{
-
-    grid-area: areaNosotros1;
-
-    
-}
-
-.principal__nosotros--seccion2{
-
-    grid-area: areaNosotros2;
-
-}
-
-.principal__nosotros--seccion3{
-
-    grid-area: areaNosotros3;
-
-}
-
-.principal__nosotros--seccion4{
-
-    grid-area: areaNosotros4;
-
-}
-
-.principal__nosotros--seccion5{
-
-    grid-area: areaNosotros5;
 
 }
 
@@ -278,27 +190,16 @@ body{
 
 }
 
-.grid-contenedor-padre-contacto{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 750px 80px;
-    grid-template-areas: 
-        "grid-contenedor-hijo-1 grid-contenedor-hijo-1"
-        "areaContacto1 areaContacto2"
-        "grid-contenedor-hijo-3 grid-contenedor-hijo-3";
-}
 
 .principal__contacto--mapa{
 
-    grid-area: areaContacto2;
     text-align: center;
 
 }
 
 .principal__contacto--formulario{
 
-    grid-area: areaContacto1;
     text-align: center;
 }
 
@@ -311,6 +212,7 @@ form{
     margin-left: 9rem;
 
 }
+
 
 .principal__contacto--formularioEtiquetas{
 
@@ -333,16 +235,9 @@ form{
         "grid-contenedor-hijo-3 grid-contenedor-hijo-3";
 }
 
-.grid-contenedor-hijo-clientes-1{
-
-    grid-area: areaClientes1;
-
-}
-
 
 .grid-contenedor-hijo-clientes-2{
 
-    grid-area: areaClientes2;
     display: flex;
     flex-direction: row;
     margin: 1rem;
@@ -352,7 +247,6 @@ form{
 
 .grid-contenedor-hijo-clientes-3{
 
-    grid-area: areaClientes3;
     display: flex;
     flex-direction: row;
     margin: 1rem;
@@ -362,7 +256,6 @@ form{
 
 .grid-contenedor-hijo-clientes-4{
 
-    grid-area: areaClientes4;
     display: flex;
     flex-direction: row;
     margin: 1rem;
@@ -372,7 +265,6 @@ form{
 
 .grid-contenedor-hijo-clientes-5{
 
-    grid-area: areaClientes5;
     display: flex;
     flex-direction: row;
     margin: 1rem;
@@ -382,7 +274,6 @@ form{
 
 .grid-contenedor-hijo-clientes-6{
 
-    grid-area: areaClientes6;
     text-align: center;
     margin-bottom: 2rem;
     border-top: solid 1px;
@@ -412,10 +303,10 @@ form{
 }
 
 
-.footer{
+.footer_flex{
 
     background-color: #6A9C78;
-    grid-area: grid-contenedor-hijo-3;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -462,7 +353,7 @@ form{
 
 /* Responsive Index */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     
     .grid-contenedor-padre-inicio{
 
@@ -490,12 +381,12 @@ form{
     #menu{
 
         margin-bottom: 1rem;
-    }
+    } */
     
 
     /* Responsive Servicios */
 
-    .grid-contenedor-padre-servicios{
+    /* .grid-contenedor-padre-servicios{
 
         display: grid;
         grid-template-columns: 1fr;
@@ -561,11 +452,11 @@ form{
     
         margin: 1.5rem;
         line-height: 1.5rem;
-    }
+    } */
 
     /* Responsive Nosotros */
 
-    .grid-contenedor-padre-nosotros{
+    /* .grid-contenedor-padre-nosotros{
 
         display: grid;
         grid-template-columns: 1fr;
@@ -609,11 +500,11 @@ form{
     
         grid-area: areaNosotros5;
     
-    }
+    } */
 
     /* Responsive Contacto */
 
-    .grid-contenedor-padre-contacto{
+    /* .grid-contenedor-padre-contacto{
 
         display: grid;
         grid-template-columns: 1fr;
@@ -652,13 +543,13 @@ form{
     
         margin: 2rem;
     
-    }
+    } */
 
     /* Responsive Clientes */
 
-    .grid-contenedor-padre-clientes{
+    /* .grid-contenedor-padre-clientes{
 
-        /* display: grid; */
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 120px 600px 390px 390px 390px 390px 250px 140px; 
         grid-template-areas: 
@@ -730,11 +621,11 @@ form{
         width: 75%;
         height: 90%;
     
-    }
+    } */
 
     /* Responsive Header y Footer */
 
-    .header__navegacion{
+    /* .header__navegacion{
     
         display: flex;
         flex-direction: column;
@@ -799,9 +690,8 @@ form{
 
         display: none;
     }
+ */
 
-
-}
 
 
     
