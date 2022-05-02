@@ -108,6 +108,7 @@ body{
 .header{
 
     background-color: #6A9C78;
+    box-shadow: 5px 10px 8px #888888;
     grid-area: grid-contenedor-hijo-1;
 } 
 
@@ -160,6 +161,7 @@ body{
     height: 550px;
     width: 100%;
     object-fit: cover;
+    margin-top: 1.5rem;
 
 }
 
@@ -415,6 +417,7 @@ form{
 .footer{
 
     background-color: #6A9C78;
+    box-shadow: 8px -10px 5px #888888;
     grid-area: grid-contenedor-hijo-3;
     display: flex;
     flex-wrap: wrap;
@@ -453,11 +456,20 @@ form{
 .footer__logo--redes{
 
    margin-top: 8rem;
+   margin-left: 0.5rem;
    width: 2rem;
    height: 2rem;
+   display: inline-block;
+    transition: all 1s;
 
 }
 
+.footer__logo--redes:hover{
+
+    transform: scale(1.5, 1.5);  
+    overflow: hidden;
+
+}
 /* Media Queries */
 
 /* Responsive Index */
