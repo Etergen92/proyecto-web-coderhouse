@@ -11,7 +11,7 @@ body{
 
 }
 
-.principal__servicios--flex1{
+/* .principal__servicios--flex1{
 
     display: flex;
     flex-direction: row;
@@ -30,12 +30,12 @@ body{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
+} */
 
 .principal__section--subtitulos{
 
     text-align: center;
-    margin: 2rem;
+    margin-top: 2rem;
 
 }
 
@@ -144,13 +144,13 @@ body{
 
 }
 
-.principal__section--imagen-ilustrativa{
+/* .principal__section--imagen-ilustrativa{
 
     width: 100%;
     height: 100%;
     object-fit: cover;
 
-}
+} */
 
 
 .principal__section--boton{
@@ -163,8 +163,9 @@ body{
 
 .principal__section--parrafo{
 
-    margin: 1rem;
+    margin-top: 1.5rem;
     line-height: 1.5rem;
+    text-align: justify;
 
 }
 
@@ -176,16 +177,15 @@ body{
 
 .principal__nosotros--sectionImagenIlustrativaObjetivos{
 
-    width: 100%;
-    height: 100%;
+    
+    height: 40rem;
     object-fit: cover;
 
 }
 
 .principal__nosotros--sectionImagenIlustrativa{
 
-    width: 100%;
-    height: 75%;
+    height: 40rem;
     object-fit: cover;
 
 }
@@ -209,7 +209,7 @@ form{
     background-color: #ebefec;
     border: solid 1px;
     border-radius: 4px;
-    margin-left: 9rem;
+    /* margin-left: 9rem; */
 
 }
 
@@ -218,21 +218,6 @@ form{
 
     margin: 2rem;
 
-}
-
-
-.grid-contenedor-padre-clientes{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 94px 600px 350px 350px 300px 90px; 
-    grid-template-areas: 
-        "grid-contenedor-hijo-1 grid-contenedor-hijo-1"
-        "areaClientes1 areaClientes1"
-        "areaClientes2 areaClientes3"
-        "areaClientes4 areaClientes5"
-        "areaClientes6 areaClientes6"
-        "grid-contenedor-hijo-3 grid-contenedor-hijo-3";
 }
 
 
@@ -295,7 +280,13 @@ form{
 
 }
 
-.principal__section--logoPatrocinador{
+.principal__section--patrocinador{
+
+   text-align: center;
+}
+
+
+.principal__section--patrocinadorLogo{
 
     width: 10%;
     height: 35%;
@@ -325,7 +316,7 @@ form{
 
 .footer__logo--guitarra{
 
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     width: 3.5rem;
@@ -343,15 +334,41 @@ form{
 
 .footer__logo--redes{
 
-   margin-top: 8rem;
-   width: 2rem;
-   height: 2rem;
+    text-align: right;
+    /* margin-top: 8rem; */
+    width: 2rem;
+    height: 2rem;
 
 }
+
+
 
 /* Media Queries */
 
 /* Responsive Index */
+
+
+@media (max-width: 992px) {
+
+    .header__navegacion--ul{
+
+        text-align: center;
+
+    }
+
+    .principal__nosotros--sectionLista{
+
+        text-align: center;
+
+    }
+
+    .nav__redes{
+
+        margin: 0 auto;
+
+    }
+  }
+
 
 /* @media screen and (max-width: 600px) {
     

@@ -14,28 +14,29 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="row header">
-            <nav class="col-12 header__navegacion">
-                <div>
-                    <!--Logo y nombre de Taller-->
-                    <img class="logo" src="../img/logo.png" alt="Logo guitarra">
-                </div>
-                <div id="menu">
-                <!--Menú de Navegacion-->
-                    <ul class="header__navegacion--ul" >
-                        <li><a class="header__navegacion--a" href="../index.html">Inicio</a></li>
-                        <li><a class="header__navegacion--a" href="pages/servicios.html">Servicios</a></li>
-                        <li><a class="header__navegacion--a" href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a class="header__navegacion--a" href="pages/nuestros-clientes.html">Clientes</a></li>
-                    </ul>
-                </div>  
-            </nav>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a href="#"><img class="logo" src="../img/logo.png" alt="Logo guitarra"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="nuestros-clientes.html">Clientes</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    </ul> 
+                  </div> 
+                </div> 
+            </nav>  
         </header>
 
         <main class="row">
-            <div class="col-6 principal__contacto--formulario">
-                <h2 class="principal__section--subtitulos">Contactános</h2>
-                <form class="border border-3" action="" method="" enctype="" >
+            <div class="col-12 col-lg-6 principal__contacto--formulario">
+                <h2 class="principal__section--subtitulos text-center">Contactános</h2>
+                <form class="border border-3 m-auto" >
                     <div class="principal__contacto--formularioEtiquetas">
                         <label for="nombre">Nombre: </label>
                         <input type="text" name="nombre" id="nombre">
@@ -52,19 +53,25 @@
                     <div class="principal__contacto--formularioEtiquetas">
                         <h3 class="principal__section--subtitulos">Motivo de Contacto</h3>
 
-                        <label for="arreglo">Reparacion</label>
-                        <input type="radio" name="motivo-contacto" id="arreglo" value="arreglo">
-                    
-                        <label for="construccion">Construccion</label>
-                        <input type="radio" name="motivo-contacto" id="construccion"value="construccion">
-                    
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="motivo-contacto" id="otro" value="otro">
+                        <div class="me-4 d-inline">
+                            <label for="arreglo">Reparacion</label>
+                            <input type="radio" name="motivo-contacto" id="arreglo" value="arreglo">
+                        </div>    
+                        
+                        <div class="me-4 d-inline">    
+                            <label for="construccion">Construccion</label>
+                            <input type="radio" name="motivo-contacto" id="construccion"value="construccion">
+                        </div>    
+                        
+                        <div class="me-4 d-inline">    
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="motivo-contacto" id="otro" value="otro">
+                        </div>    
                     </div>
 
                     <div class="principal__contacto--formularioEtiquetas">
-                    <h3 class="principal__section--subtitulos">Instrumento</h3>
-                        <select class="form-select" name="instrumento" id="instrumento">
+                    <h3 class="principal__section--subtitulos mt-5">Instrumento</h3>
+                        <select class="form-select mt-5" name="instrumento" id="instrumento">
                             <option value="guitarra">Guitarra</option>
                             <option value="bajo">Bajo</option>
                             <option value="violin">Violin</option>
@@ -75,30 +82,38 @@
                         </select>
                     </div>
 
-                    <div class="form-check form-check-inline mb-5 ms-5">
+                    <div class="form-check form-check-inline">
                         <h3 class="principal__section--subtitulos">Como nos conociste ?</h3> 
                     
-                        <label for="instagram">Instagram</label>
-                        <input type="checkbox" name="instagram" id="instagram" value="1">
-                    
-                        <label for="facebook">Facebook</label>
-                        <input type="checkbox" name="facebook" id="facebook" value="2">
-                    
-                        <label for="instagram">YouTube</label>
-                        <input type="checkbox" name="youtube" id="youtube" value="3">
-                    
-                        <label for="otro">Otro</label>
-                        <input type="checkbox" name="otro" id="otro" value="4">    
+                        <div class="me-4 d-inline">
+                            <label for="instagram">Instagram</label>
+                            <input type="checkbox" name="instagram" id="instagram" value="1">
+                        </div>    
+
+                        <div class="me-4 d-inline">
+                            <label for="facebook">Facebook</label>
+                            <input type="checkbox" name="facebook" id="facebook" value="2">
+                        </div>
+
+                        <div class="me-4 d-inline">
+                            <label for="instagram">YouTube</label>
+                            <input type="checkbox" name="youtube" id="youtube" value="3">
+                        </div>
+                        
+                        <div class="me-4 d-inline">
+                            <label for="otro">Otro</label>
+                            <input type="checkbox" name="otro" id="otro" value="4">    
+                        </div>
                     </div>               
 
-                    <div class="mb-3">
+                    <div class="mt-5 mb-3">
                         <input class="btn btn-secondary" type="submit" name="enviar" id="enviar">
                         <input class="btn btn-secondary" type="reset" name="reestablecer" id="reestablecer">
                     </div>
                 </form>
             </div>
 
-            <div class="col-6 principal__contacto--mapa">
+            <div class="col-12 col-lg-6 principal__contacto--mapa">
                 <div>
                     <h2 class="principal__section--subtitulos">Donde estamos:</h2>
                     <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore quis, eligendi modi numquam inventore voluptatum qui laborum ratione alias a dignissimos, 
@@ -111,14 +126,24 @@
         <footer class="row mt-5">
             <div class="footer_flex col-12">
                 <div class="footer__logo--derechos">
-                    <img class="footer__logo--guitarra" src="../img/logo.png" alt="Logo de guitarra">
-                    <p class="footer__logo--p">Derechos Reservados 2022</p>
-                </div>    
-                <div class="footer__logo--redesFlex">
-                    <a href=""><img class="footer__logo--redes" src="../img/instagram-black_100099.png" alt="Logo Instagram"></a>
-                    <a href=""><img class="footer__logo--redes" src="../img/facebook-logo.png" alt="Logo Facebook"></a>
-                    <a href=""><img class="footer__logo--redes" src="../img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
-                    <a href=""><img class="footer__logo--redes" src="../img/youtube-logo.png" alt="Logo YouTube"></a>
+                    <img class="d-none d-lg-block d-xl-block d-xxl-block footer__logo--guitarra" src="../img/logo.png" alt="Logo de guitarra">
+                    <p class="d-none d-lg-block d-xl-block d-xxl-block footer__logo--p">Derechos Reservados 2022</p>
+                </div>   
+                <div> 
+                    <ul class="nav justify-content-end col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/instagram-black_100099.png" alt="Logo Instagram"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/facebook-logo.png" alt="Logo Facebook"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/youtube-logo.png" alt="Logo YouTube"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

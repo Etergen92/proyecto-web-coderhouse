@@ -4,89 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Nosotros</title>
 </head>
-<body class="grid-contenedor-padre-nosotros">
-    <header class="header">
-        <nav class="header__navegacion">
-            <img class="logo" src="../img/logo.png" alt="Logo guitarra">
-
-            <ul class="header__navegacion--ul" >
-            <li><a class="header__navegacion--a" href="../index.html">Inicio</a></li>
-            <li><a class="header__navegacion--a" href="servicios.html">Servicios</a></li>
-            <li><a class="header__navegacion--a" href="nuestros-clientes.html">Clientes</a></li>
-            <li><a class="header__navegacion--a" href="contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    
-        <section class="principal__nosotros--seccion1">
-            <h2 class="principal__section--subtitulos">Nuestra Historia</h2>
-            
-            <p class="principal__section--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat libero odit illo. Minus quidem, 
-            cupiditate reprehenderit qui dolores eos molestiae, quam numquam perferendis nostrum perspiciatis tenetur alias at natus. Lorem ipsum dolor 
-            sit amet consectetur adipisicing elit. Accusamus odit officia consectetur sunt veritatis, omnis officiis quidem nihil soluta deleniti nemo dolor unde molestiae
-            quaerat distinctio molestias rem amet. Esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit obcaecati soluta sequi beatae delectus. 
-            Iure dicta, at quis nisi officia temporibus? Veniam illum reiciendis nam repellendus voluptate nobis vero?</p>
-        </section> 
+<body>
+    <div class="container-fluid">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a href="#"><img class="logo" src="../img/logo.png" alt="Logo guitarra"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="nuestros-clientes.html">Clientes</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul> 
+                  </div> 
+                </div> 
+            </nav>  
+        </header>
         
-        <section class="principal__nosotros--seccion2">
-            <div>
-                <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia eius voluptas culpa assumenda nemo perspiciatis quaerat esse illum. Tempore provident voluptate
-                    est ratione illum consequuntur velit et amet voluptatum. Ut recusandae molestiae tenetur harum molestias nulla vero nesciunt voluptatum quod eveniet adipisci 
-                    aspernatur amet dolorum minus iusto assumenda cum vel enim, hic officiis alias? Ducimus saepe consequatur ratione libero. Error reprehenderit, placeat facilis.</p>
-                <p class="principal__section--parrafo">Nuestros principales objetivos con nuestros clientes como principales luthiers de la ciudad de Buenos Aires son: </p>
-            </div>    
-
-            <ul class="principal__nosotros--sectionLista"> 
-                <li class="">Objetivo 1</li>
-                <li class="">Objetivo 2</li>
-                <li class="">Objetivo 3</li>
-            </ul>
-        </section>
-
-        <section class="principal__nosotros--seccion3">
+        <main>
+            <section class="row principal__nosotros--seccion1">
+                <h2 class="col-lg-12 principal__section--subtitulos">Nuestra Historia</h2>
+                
+                <p class="col-lg-12 principal__section--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat libero odit illo. Minus quidem, 
+                cupiditate reprehenderit qui dolores eos molestiae, quam numquam perferendis nostrum perspiciatis tenetur alias at natus. Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Accusamus odit officia consectetur sunt veritatis, omnis officiis quidem nihil soluta deleniti nemo dolor unde molestiae
+                quaerat distinctio molestias rem amet. Esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit obcaecati soluta sequi beatae delectus. 
+                Iure dicta, at quis nisi officia temporibus? Veniam illum reiciendis nam repellendus voluptate nobis vero?</p>
+                <p class="col-lg-12 principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia eius voluptas culpa assumenda nemo perspiciatis quaerat esse illum. Tempore provident voluptate
+                est ratione illum consequuntur velit et amet voluptatum. Ut recusandae molestiae tenetur harum molestias nulla vero nesciunt voluptatum quod eveniet adipisci 
+                aspernatur amet dolorum minus iusto assumenda cum vel enim, hic officiis alias? Ducimus saepe consequatur ratione libero. Error reprehenderit, placeat facilis:</p>
+            </section>
             
-            <img class="principal__nosotros--sectionImagenIlustrativaObjetivos" src="../img/taller-historia.jpg" alt="Imagen Taller">
-        </section>
+            <section class="row">   
+                <ul class="col-12 col-lg-3 principal__nosotros--sectionLista"> 
+                    <li class="">Objetivo 1</li>
+                    <li class="">Objetivo 2</li>
+                    <li class="">Objetivo 3</li>
+                </ul>
+                
+                <img class="col-12 col-lg-8 principal__nosotros--sectionImagenIlustrativaObjetivos" src="../img/taller-historia.jpg" alt="Imagen Taller">   
+            </section>
+            
+            <section class="row">
+                <h2 class="principal__section--subtitulos">Nuestro Taller</h2>
+                
+                <img class="principal__nosotros--sectionImagenIlustrativa" src="../img/taller-2.jpeg " alt="Imagen Taller">
+                <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur eligendi sint quam eos veritatis praesentium doloribus minima!
+                Soluta corrupti iusto rerum omnis minima error repellat, reiciendis laboriosam laudantium veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Praesentium minima amet quasi architecto quidem. Quos, unde! Magnam laborum deleniti itaque ex esse repellat nesciunt, vero ipsa! Aperiam nisi quod consequatur! <a href="contacto.html">Ir a Contacto</a></p>
+            </section>
+
+            <section class="row">
+                <h2 class="principal__section--subtitulos">Nuestro Equipo</h2>
+                
+                <img class="principal__nosotros--sectionImagenIlustrativa" src="../img/luthier-2.jpg" alt="Imagen Luthier">
+                <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur eligendi sint quam eos veritatis praesentium doloribus minima!
+                Soluta corrupti iusto rerum omnis minima error repellat, reiciendis laboriosam laudantium veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut illum dolores 
+                beatae iure laborum ullam molestias dolor ipsam a odio quasi et distinctio, id, cum expedita sequi nemo voluptatum! <a href="servicios.html">Ir a Servicios</a></p>
+            </section>
+        </main>
         
-        <section class="principal__nosotros--seccion4">
-            <h2 class="principal__section--subtitulos">Nuestro Taller</h2>
-            
-            <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur eligendi sint quam eos veritatis praesentium doloribus minima!
-            Soluta corrupti iusto rerum omnis minima error repellat, reiciendis laboriosam laudantium veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Praesentium minima amet quasi architecto quidem. Quos, unde! Magnam laborum deleniti itaque ex esse repellat nesciunt, vero ipsa! Aperiam nisi quod consequatur!. <a href="contacto.html">Ir a Contacto</a></p>
-            <img class="principal__nosotros--sectionImagenIlustrativa" src="../img/taller-2.jpeg" alt="Imagen Taller">
-        </section>
-
-        <section class="principal__nosotros--seccion5">
-            <h2 class="principal__section--subtitulos">Nuestro Equipo</h2>
-            
-            <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur eligendi sint quam eos veritatis praesentium doloribus minima!
-            Soluta corrupti iusto rerum omnis minima error repellat, reiciendis laboriosam laudantium veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut illum dolores 
-            beatae iure laborum ullam molestias dolor ipsam a odio quasi et distinctio, id, cum expedita sequi nemo voluptatum!. <a href="servicios.html">Ir a Servicios</a></p>
-            
-            <img class="principal__nosotros--sectionImagenIlustrativa" src="../img/luthier-2.jpg" alt="Imagen Luthier">
-        </section>
-    
-    
-    <footer class="footer">
-        <div class="footer__logo--derechos">
-            <img class="footer__logo--guitarra" src="../img/logo.png" alt="Logo de guitarra">
-            <p class="footer__logo--p">Derechos Reservados 2022</p>
-        </div>    
-    
-        <div class="footer__logo--redesFlex">
-            <a href=""><img class="footer__logo--redes" src="../img/instagram-black_100099.png" alt="Logo Instagram"></a>
-            <a href=""><img class="footer__logo--redes" src="../img/facebook-logo.png" alt="Logo Facebook"></a>
-            <a href=""><img class="footer__logo--redes" src="../img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
-            <a href=""><img class="footer__logo--redes" src="../img/youtube-logo.png" alt="Logo YouTube"></a>
-        </div>
-    </footer>
+        <footer class="row mt-5">
+            <div class="footer_flex col-12">
+                <div class="footer__logo--derechos">
+                    <img class="d-none d-lg-block d-xl-block d-xxl-block footer__logo--guitarra" src="../img/logo.png" alt="Logo de guitarra">
+                    <p class="d-none d-lg-block d-xl-block d-xxl-block footer__logo--p">Derechos Reservados 2022</p>
+                </div>   
+                <div> 
+                    <ul class="nav justify-content-end col-12">
+                        <li class="nav-item">
+                        <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/instagram-black_100099.png" alt="Logo Instagram"></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/facebook-logo.png" alt="Logo Facebook"></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="footer__logo--redes" src="../img/youtube-logo.png" alt="Logo YouTube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>    
 </body>
 </html>
