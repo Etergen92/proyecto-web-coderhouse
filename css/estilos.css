@@ -138,13 +138,14 @@ body{
     color: white;
     display: inline-block;
     transition: all 1s;
+    margin-right: 3rem;
 
 }
 
 .header__navegacion--a:hover{
 
     transform: scale(1.5, 1.5);  
-    overflow: hidden;
+    
 
 }
 
@@ -474,7 +475,7 @@ form{
 
 /* Responsive Index */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 988px) {
     
     .grid-contenedor-padre-inicio{
 
@@ -499,9 +500,12 @@ form{
         grid-area: grid-contenedor-hijo-2;
     }
 
-    #menu{
+    .principal__inicio--section1Imagen{
 
-        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+        margin: 1 auto;
+
     }
     
 
@@ -511,7 +515,7 @@ form{
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 4% 31% 31% 31% 3%; 
+        grid-template-rows: 3% 31% 32% 32% 2%; 
         grid-template-areas: 
             "grid-contenedor-hijo-1"
             "area1"
@@ -563,16 +567,26 @@ form{
 
     }
 
-    .principal__servicios--subtitulos{
+    .principal__section--subtitulos{
 
-        margin: 1.5rem;
-    
+        text-size-adjust: auto;
+
     }
+
     
     .principal__servicios--parrafo{
     
-        margin: 1.5rem;
+        margin: 1rem;
         line-height: 1.5rem;
+        font-size: small;
+    }
+
+    .principal__section--imagen-ilustrativa{
+
+        width: 23rem;
+        height: auto;
+        margin: 0 auto;
+
     }
 
     /* Responsive Nosotros */
@@ -778,24 +792,24 @@ form{
         grid-area: grid-contenedor-hijo-3;
         align-content: center;
         flex-direction: row;
+        margin-top: 1rem;
     }
 
     
     .footer__logo--guitarra{
     
-        margin: 0 17rem;
-        width: 3rem;
-        height: 3rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    
+
+        display: none;
+        
     }
     
     .footer__logo--redesFlex{
 
         display: flex;
         flex-direction: row;
-        gap: 8rem;
+        align-items: center;
+        gap: 4rem;
+        margin: 0 auto;
 
     }
     .footer__logo--redes{
