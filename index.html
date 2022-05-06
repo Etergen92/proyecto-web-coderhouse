@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Taller Lutheria</title>
+    <title>Inicio</title>
 </head>
-<body class="grid-contenedor-padre-inicio">
-    <header class="header">
+<body>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <img class="logo" src="./img/logo.png" alt="Logo guitarra">
@@ -21,18 +21,18 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav navegacion">
                   <li class="nav-item">
-                    <a class="header__navegacion--a" href="./pages/servicios.html">Servicios</a>
+                    <a class="navegacion__enlace" href="./pages/servicios.html">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header__navegacion--a" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="./pages/nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header__navegacion--a" href="./pages/nuestros-clientes.html">Clientes</a>
+                    <a class="navegacion__enlace" href="./pages/nuestros-clientes.html">Clientes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header__navegacion--a" href="./pages/contacto.html">Contacto</a>
+                    <a class="navegacion__enlace" href="./pages/contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -40,52 +40,67 @@
           </nav>
     </header>
 
-
-    <main class="principal">
-
-        <section class="grid-contenedor-hijo-nosotros-2" >
-            <div>
+    <main class="principalInicio">
+        <section>
+            <div class="bienvenida">
                 <!--Imagen de taller-->
-                <img  class="principal__inicio--section1Imagen" src="img/luthier.jpg" alt="Imagen de taller de Lutheria">
-
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/luthier.jpg" class="d-block w-100 bienvenida__img" alt="Imagen de taller de Lutheria">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/luthier-3.jpg" class="d-block w-100 bienvenida__img" alt="Imagen de taller de Lutheria">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/luthier-4.jpg" class="d-block w-100 bienvenida__img" alt="Imagen de taller de Lutheria">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+        
                 <!--Breve historia del taller y descripcion de los servicios ofrecidos-->
-                <p class="principal__section1--cita" >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam dolorum possimus id mollitia incidunt enim, molestias facilis voluptatum 
-                    dolorem consequuntur rem expedita nesciunt voluptatem sed nostrum dolor! Vero, incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Doloribus odio minus ab quasi eius, commodi quo, aspernatur alias quisquam sint ad exercitationem labore similique veniam et facilis? At, ratione corporis?"
-                </p>
+                  <p class="bienvenida__cita">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam dolorum possimus id mollitia incidunt enim, molestias facilis voluptatum 
+                      dolorem consequuntur rem expedita nesciunt voluptatem sed nostrum dolor! Vero, incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Doloribus odio minus ab quasi eius, commodi quo, aspernatur alias quisquam sint ad exercitationem labore similique veniam et facilis? At, ratione corporis?"
+                  </p>
             </div>
         </section>
-
         
-        <section class="grid-contenedor-hijo-nosotros-3"> 
-            <div>
+        <section> 
+            <div class="historia">
                 <!-- Video Institucional -->
-                <h2 class="principal__section--subtitulos">Lorem, ipsum dolor</h2>
+                <h2 class="historia__titulo">Lorem, ipsum dolor</h2>
                 
                 <!--Carrousel con imagenes de algunos trabajos realizados-->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/biWk-QLWY7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="principal__section--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iusto dolorem quisquam officiis provident, aliquam corrupti reprehenderit molestias ex inventore! Illo a autem fuga? Totam tempore soluta quia dolores et?
+                <p class="historia__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iusto dolorem quisquam officiis provident, aliquam corrupti reprehenderit molestias ex inventore! Illo a autem fuga? Totam tempore soluta quia dolores et?
                 Excepturi quas ipsam error aliquam deleniti. Harum cum itaque modi atque vitae eligendi id voluptatum? Suscipit blanditiis aspernatur ratione ipsum aut rem, eum dignissimos, vel fugiat iusto voluptatem quo debitis.
                 Quam molestiae dolor quis quaerat. Deserunt labore, quisquam, debitis temporibus error harum corrupti natus soluta aperiam, nihil totam eaque aut assumenda ratione tempora voluptatibus voluptatum nesciunt fugit eligendi odit velit!
                 Sapiente nobis veritatis in numquam quisquam esse. Quasi atque amet nam sint quaerat consectetur, fuga nihil placeat magnam accusamus sit. Quisquam fuga nam corrupti ipsa rem neque? Esse, suscipit expedita.</p>
-            </div>
-            <a href="#menu">Volver a Menu</a>
-
+              </div>
         </section>
     </main>
 
     
-    <footer class="footer">
-        <div class="footer__logo--derechos">
-            <img class="footer__logo--guitarra" src="img/logo.png" alt="Logo de guitarra">
-            <p class="footer__logo--p">Derechos Reservados 2022</p>
+    <footer class="redesFooter">
+        <div class="redesFooter__derechos">
+            <img class="logo" src="./img/logo.png" alt="Logo de guitarra">
+            <p class="redesFooter__derechos--p">Derechos Reservados 2022</p>
         </div>    
 
-        <div class="footer__logo--redesFlex">
-            <a href=""><img class="footer__logo--redes" src="img/instagram-black_100099.png" alt="Logo Instagram"></a>
-            <a href=""><img class="footer__logo--redes" src="img/facebook-logo.png" alt="Logo Facebook"></a>
-            <a href=""><img class="footer__logo--redes" src="img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
-            <a href=""><img class="footer__logo--redes" src="img/youtube-logo.png" alt="Logo YouTube"></a>
+        <div class="redesFooter__logoRedSocial">
+            <a href="https://www.instagram.com/" target="_blank"><img class="logo-redes" src="./img/instagram-black_100099.png" alt="Logo Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="logo-redes" src="./img/facebook-logo.png" alt="Logo Facebook"></a>
+            <a href=""><img class="logo-redes" src="./img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img class="logo-redes" src="./img/youtube-logo.png" alt="Logo YouTube"></a>
         </div>
     </footer>
 </body>
