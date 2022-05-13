@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Clientes</title>
+    <title>Clientes | Conoce quienes son nuestros principales y mas reconocidos clientes del mundo de la musica, quienes avalan nuestro compromiso y calidad</title>
+    <meta name="description" content="">
 </head>
 <body>
     <header>
@@ -40,46 +41,66 @@
         </nav>
     </header>
 
-    <main>
-        <section class="">
+    <main class="principalClientes">
+        <section class="principalClientes__video">
             <h2 class="subtitulo">Nuestros Clientes Destacados</h2>
             <!-- Video de clientes con sus instrumentos -->
             <div class="">
-                <iframe width="900" height="450" src="https://www.youtube.com/embed/oMTd_H3eOvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/oMTd_H3eOvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>    
         </section>
         
-        <section class="">
+        <section class="principalClientes__op1">
             <!-- Imagenes y nombres de los clientes reconocidos -->
-            <img class="" src="../img/musico-1.jpg" alt="Imagen Guitarrista">
-            <p class="">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
+            <img class="principalClientes__op1--imagen" src="../img/musico-1.jpg" alt="Imagen Guitarrista">
+            <p class="principalClientes__op1--p">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
                 illum voluptatibus. Beatae autem iure ullam id quae dolores repudiandae?''</p>
         </section>  
         
-        <section class="">      
-            <img class="" src="../img/musico-2.jpg" alt="Imagen Saxofonista">    
-            <p class="">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
+        <section class="principalClientes__op2">      
+            <img class="principalClientes__op2--imagen" src="../img/musico-2.jpg" alt="Imagen Saxofonista">    
+            <p class="principalClientes__op2--p">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
                 illum voluptatibus. Beatae autem iure ullam id quae dolores repudiandae?''</p>
         </section>   
 
-        <section class="">     
-            <img class="" src="../img/musico-3.jpg" alt="Imagen Guitarrista">    
-            <p class="">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
+        <section class="principalClientes__op3">     
+            <img class="principalClientes__op3--imagen" src="../img/musico-3.jpg" alt="Imagen Guitarrista">    
+            <p class="principalClientes__op3--p">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
                 illum voluptatibus. Beatae autem iure ullam id quae dolores repudiandae?''</p>
         </section>
 
-        <section class="">        
-            <img class="" src="../img/musico-4.jpg" alt="Imagen Guitarrista">    
-            <p class="">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
+        <section class="principalClientes__op4">        
+            <img class="principalClientes__op4--imagen" src="../img/musico-4.jpg" alt="Imagen Guitarrista">    
+            <p class="principalClientes__op4--p">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia debitis quaerat tempore aliquam cupiditate quas perspiciatis consectetur a quisquam, 
                 illum voluptatibus. Beatae autem iure ullam id quae dolores repudiandae?''</p>
         </section>
     
-        <section class="">
+        <section class="principalClientes__patrocinio">
             <h2 class="subtitulo">Patrocinadores</h2>
-            <img class="" src="../img/patrocinador-2.png" alt="Logo patrocinador">
-            <img class="" src="../img/patrocinador.png" alt="Logo patrocinador">
-            <img class="" src="../img/patrocinador-3.png" alt="Logo patrocinador">
-            <img class="" src="../img/patrocinador-4.png" alt="Logo patrocinador">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/patrocinador-2.png" class="d-block imagenPatrocinador" alt="Logo patrocinador Gibson">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/patrocinador.png" class="d-block imagenPatrocinador" alt="Logo patrocinador Fender">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/patrocinador-3.png" class="d-block imagenPatrocinador" alt="Logo patrocinador G&L">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/patrocinador-4.png" class="d-block imagenPatrocinador" alt="Logo patrocinador Music Man">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </section>
     </main>
 
