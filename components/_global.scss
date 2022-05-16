@@ -41,3 +41,60 @@ body{
     margin: 35px;
 
 }
+
+// Tarjetas Clientes
+
+@mixin tarjeta($bgColorCard){
+
+    box-shadow: $bxshadow;
+    border-radius: 30px;
+    border: 0.5px solid green;
+    margin: 25px;
+    background-color: $bgColorCard;
+
+}
+
+.imgTarjetaClientes{
+
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    transition: all 1s;
+    border-radius: 30px;
+
+}
+
+.principalClientes__boton{
+
+    margin-left: 25px;
+    border-radius: 10px;
+
+}
+
+$mapaRRSSClientesBotones:(
+
+    instagram: #405DE6,
+    spotify: #1ED760,
+    youtube: #FF0000,
+
+);
+
+$mapaRRSSClientesEstilo:(
+
+    cita: italic,
+    bordesRedondos: 12px,
+
+);
+
+
+// Imagenes Nosotros
+
+@mixin img-size($width) {
+    
+    width: $width;
+    height: 700px;
+    object-fit: cover;
+
+}
+
+

@@ -33,7 +33,7 @@
         font-style: italic;
         margin-top: 30px;
         border-radius: 20px;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: $bxshadow;
 
     }
 
@@ -43,10 +43,10 @@
 
     text-align: center;
 
-    &__titulo{
+    // &__titulo{
 
-        margin-bottom: 20px;
-    }
+    //     margin-bottom: 20px;
+    // }
 
     &__parrafo{
 
@@ -114,14 +114,13 @@
         &--lista{
 
             list-style: none;
+            margin-top: 40px;
 
         }
 
         &--imagen{
 
-            width: 1000px;
-            height: 500px;
-            object-fit: cover;
+            @include img-size(1000px);
 
         }
 
@@ -133,9 +132,7 @@
 
         &--imagen{
 
-            width: 100%;
-            height: 700px;
-            object-fit: cover;
+            @include img-size(100%);
 
         }
 
@@ -147,17 +144,12 @@
 
         &--imagen{
 
-            width: 100%;
-            height: 700px;
-            object-fit: cover;
+            @include img-size(100%);
+            margin-bottom: 40px;
             
         }
-
     }
-
 }
-
-
 
 //CSS - Clientes
 
@@ -184,15 +176,11 @@
 
         grid-area: area2;
         display: flex;
-        margin: 25px;
+        @include tarjeta(yellow);
 
         &--imagen{
 
-            width: 35%;
-            height: auto;
-            object-fit: cover;
-            transition: all 1s;
-            border-radius: 30px;
+            @extend .imgTarjetaClientes;
 
         }
 
@@ -205,6 +193,16 @@
         &--p{
 
             margin-left: 35px;
+            margin-top: 50px;
+            font-style: map-get($mapaRRSSClientesEstilo, cita);
+        }
+
+        @each $boton, $color in $mapaRRSSClientesBotones {
+
+            .botonesRRSS--#{$boton} {
+                background-color: $color;
+            }
+            
         }
 
     }
@@ -213,15 +211,11 @@
         
         grid-area: area3;
         display: flex;
-        margin: 25px;
+        @include tarjeta(turquoise);
 
         &--imagen{
 
-            width: 35%;
-            height: auto;
-            object-fit: cover;
-            transition: all 1s;
-            border-radius: 30px;
+            @extend .imgTarjetaClientes;
 
         }
 
@@ -234,6 +228,16 @@
         &--p{
 
             margin-left: 35px;
+            margin-top: 50px;
+            font-style: map-get($mapaRRSSClientesEstilo, cita);
+        }
+
+        @each $boton, $color in $mapaRRSSClientesBotones {
+
+            .botonesRRSS--#{$boton} {
+                background-color: $color;
+            }
+    
         }
     }
 
@@ -241,15 +245,11 @@
         
         grid-area: area4;
         display: flex;
-        margin: 25px;
+        @include tarjeta(grey);
 
         &--imagen{
 
-            width: 35%;
-            height: auto;
-            object-fit: cover;
-            transition: all 1s;
-            border-radius: 30px;
+            @extend .imgTarjetaClientes;
 
         }
 
@@ -262,22 +262,21 @@
         &--p{
 
             margin-left: 35px;
+            margin-top: 50px;
+            font-style: map-get($mapaRRSSClientesEstilo, cita);
         }
+
     }
 
     &__op4{
         
         grid-area: area5;
         display: flex;
-        margin: 25px;
+        @include tarjeta(pink);
 
         &--imagen{
 
-            width: 35%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 30px;
-            transition: all 1s;
+            @extend .imgTarjetaClientes
 
         }
 
@@ -290,13 +289,24 @@
         &--p{
 
             margin-left: 35px;
+            margin-top: 50px;
+            font-style: map-get($mapaRRSSClientesEstilo, cita);
         }
+
+        
+    }
+
+    @each $boton, $color in $mapaRRSSClientesBotones {
+
+        .botonesRRSS--#{$boton} {
+            background-color: $color;
+        }
+        
     }
 
     &__patrocinio{
         
         grid-area: area6;
-
 
     }
 
@@ -307,12 +317,39 @@
         margin: 0 auto;
 
     }
+
 }
-        
+
+.botonesRRSS{
+
+    margin-left: 35px;
+
+    &--instagram{
+
+        padding: 3px;
+        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
+
+    }
+
+    &--spotify{
+
+        padding: 3px;
+        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
+
+    }
+
+    &--youtube{
+
+        padding: 3px;
+        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
+
+    }
+
+};
 
 
 
-// CSS - Clientes
+// CSS - Contacto
 
 .principalContacto{
 
@@ -332,6 +369,7 @@
 
         grid-area: area2;
         text-align: center;
+        margin-bottom: 20px;
 
     }
 
