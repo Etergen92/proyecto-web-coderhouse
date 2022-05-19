@@ -3,7 +3,6 @@
 @import "./components/header";
 @import "./components/footer";
 
-
 // CSS Index
 
 .principalInicio{
@@ -39,14 +38,21 @@
 
 }
 
+.foto-mobile{
+
+    display: none;
+
+}
+
+.carousel{
+
+    display: block;
+
+}
+
 .historia{
 
     text-align: center;
-
-    // &__titulo{
-
-    //     margin-bottom: 20px;
-    // }
 
     &__parrafo{
 
@@ -73,8 +79,8 @@
         &__imagen{
         
             border-radius: 1220px;
-            width: 30%;
-            height: 40%;
+            // width: 30%;
+            // height: 40%;
             object-fit: cover;
         }
 
@@ -115,6 +121,8 @@
 
             list-style: none;
             margin-top: 40px;
+            // border: 1px solid black;
+            // background-color: #e4faea;
 
         }
 
@@ -314,7 +322,8 @@
 
         width: 250px;
         height: 170px;
-        margin: 0 auto;
+        margin: 0 auto; // Alineacion en contenedor
+        margin-bottom: 40px;
 
     }
 
@@ -362,7 +371,21 @@
 
         grid-area: area1;
         text-align: center;
+        border: 1px solid;
+        background-color: #e4faea;
+        border-radius: 10px;
+        width: 60%;
+        height: auto;
+        margin: 0 auto; //Margen para alinear en contenedor
+        margin-top: 20px;
+        margin-bottom: 20px;
 
+        .botonesFormulario{
+
+            margin: 40px 10px;
+
+        }
+        
     }
 
     &__mapa{
@@ -376,3 +399,4 @@
 }
 
 
+@import "./components/media-queries";

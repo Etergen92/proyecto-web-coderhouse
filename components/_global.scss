@@ -97,4 +97,14 @@ $mapaRRSSClientesEstilo:(
 
 }
 
+// Imagen Nosotros Responsive
+
+@mixin img-size-responsive($height) {
+    
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+
+}
+
 

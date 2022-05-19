@@ -2,5 +2,7 @@ Optimizacion de imagenes
 
 Modificado de titulos que describan a la pagina utilizando palabras clave
 Agregado de descripicion de cada una de las paginas del sitio
+Agregado de keywords para cada una de las paginas
+Modificacion de algunos de los encabezados para que coincidan con las keywords
 
 Icono( Windows + .)
