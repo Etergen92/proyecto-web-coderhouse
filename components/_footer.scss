@@ -3,17 +3,24 @@
     background-color: $bgColorNav;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 
     &__derechos{
 
         margin-left: 15px;
         margin-top: 15px;
+
+        &--p{
+
+            margin-top: 20px;
+
+        }
         
     }
 
     &__logoRedSocial{
 
-        margin-top: 75px;
+        margin-top: 85px;
         margin-right: 15px;
 
     }
