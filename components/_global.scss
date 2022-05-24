@@ -43,21 +43,15 @@ body{
 
 }
 
-.subtituloInicio{
+.subtitulo{
 
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 35px;
     font-size: 40px;
     text-align: center;
 
 }
 
-.subtitulo{
-
-    text-align: center;
-    margin: 35px;
-
-}
 
 // Tarjetas Clientes
 
@@ -124,4 +118,58 @@ $mapaRRSSClientesEstilo:(
 
 }
 
+@mixin flexServicio{
 
+    display: flex;
+    gap: 20px;
+    margin: 100px;
+
+}
+
+@mixin imgServicio{
+    
+    border-radius: 1220px;
+    border: 8px solid $bgColorNav;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+
+}
+
+@mixin parrafoServicio{
+    
+    text-align: justify;
+    line-height: 2.3rem;
+    font-size: medium;
+    color: $bgColor;
+    margin-left: 200px;
+    margin-right: 100px;
+
+}
+
+@mixin imgNosotrosCard{
+
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+@mixin parrafoNosotrosCard{
+
+    width: 550px;
+    height: 400px;
+    padding: 90px;
+    color: $bgColor;
+    text-align: center;
+
+}
+
+.iconoObjetivos{
+    
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
