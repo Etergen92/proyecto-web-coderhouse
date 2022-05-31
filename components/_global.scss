@@ -47,6 +47,7 @@ body{
 
     font-weight: 800;
     margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 40px;
     text-align: center;
 
@@ -59,7 +60,7 @@ body{
 
     box-shadow: $bxshadow;
     border-radius: 30px;
-    border: 0.5px solid green;
+    border: 0.5px solid black;
     margin: 25px;
     background-color: $bgColorCard;
 
@@ -67,7 +68,7 @@ body{
 
 .imgTarjetaClientes{
 
-    width: 35%;
+    width: 340px;
     height: auto;
     object-fit: cover;
     transition: all 1s;
@@ -96,6 +97,24 @@ $mapaRRSSClientesEstilo:(
     bordesRedondos: 12px,
 
 );
+
+
+@mixin bienvenidaBoxResponsive{
+
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    position: unset;
+    opacity: 1;
+
+}
+ .imgBoxResponsive{
+
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+ }
 
 
 // Imagenes Nosotros
@@ -147,10 +166,29 @@ $mapaRRSSClientesEstilo:(
 
 }
 
+@mixin parrafoServicioResponsive{
+    
+    text-align: justify;
+    line-height: 1rem;
+    font-size: smaller;
+    color: $bgColor;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
 @mixin imgNosotrosCard{
 
     width: 550px;
     height: 400px;
+    object-fit: cover;
+
+}
+
+@mixin imgNosotrosEquipo{
+
+    width: 400px;
+    height: 350px;
     object-fit: cover;
 
 }
@@ -173,3 +211,25 @@ $mapaRRSSClientesEstilo:(
     margin-bottom: 20px;
 
 }
+
+.flexIconosContacto{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card{
+
+    width: 400px;
+
+}
+
+@mixin imgServicioResponsive{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+

@@ -62,14 +62,15 @@
 
         &--boton{
 
-            margin-top: 25px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 65px;
             padding: 10px;
             border: none;
             background-color: $bgColor;
             color: $bgColorNav;
 
         }
-
 
     }
 
@@ -214,9 +215,9 @@
     .serviciosDiseñoConstruccion{
 
         grid-area: area2;
-        // @extend .subtituloInicio;
-        // background: rgb(36,161,156);
-        // background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+        color: $bgColor;
+        background: rgb(36,161,156);
+        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
 
     .flexDiseño{
 
@@ -225,6 +226,7 @@
         &__imagen{
 
             @include imgServicio;
+            border-color: $bgColor; 
 
         }
 
@@ -232,7 +234,6 @@
 
             @include parrafoServicio;
             margin-right: 0;
-            color: black;
             
         }
     }
@@ -242,14 +243,10 @@
     .serviciosRestauracion{
 
         grid-area: area3;
-        background-color: $bgColorNav;
-        // background: rgb(36,161,156);
-        // background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
-        .subtituloRestauracion{
-
-            color: $bgColor;
-
-        }
+        background-color: $bgColor;
+        
+        background: rgb(241,241,241);
+        background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
 
         .flexRestauracion{
 
@@ -259,7 +256,7 @@
             &__imagen{
 
                 @include imgServicio;
-                border-color: $bgColor
+                border-color: $bgColorNav;
     
             }
     
@@ -267,6 +264,7 @@
     
                 @include parrafoServicio;
                 margin-left: 0;
+                color: black;
                 
             }
 
@@ -277,6 +275,10 @@
     .serviciosReparacion{
 
         grid-area: area4;
+        color: $bgColor;
+        background: rgb(36,161,156);
+        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+        
 
         .flexReparacion{
 
@@ -285,6 +287,7 @@
             &__imagen{
 
                 @include imgServicio;
+                border-color: $bgColor;
     
             }
     
@@ -292,12 +295,43 @@
     
                 @include parrafoServicio;
                 margin-right: 0;
-                color: black;
                 
             }
 
         }
 
+    }
+
+    .serviciosGaleria{
+
+        margin-top: 30px;
+        margin-bottom: 120px;
+
+        .imgCarouselServicios{
+
+            width: 1000px;
+            height: 600px;
+            object-fit: cover;
+            margin: 0 auto;
+
+        }
+
+        .carousel{
+
+            .carousel-control-prev-icon {
+
+                color: $bgColorNav;
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324A19C' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+            
+            }
+            
+            .carousel-control-next-icon {
+
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324A19C' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            
+            }
+
+        }
     }
 }
 
@@ -330,6 +364,13 @@
             @extend .bienvenida__box;
             top: 250px;
 
+            &--titulo{
+
+                font-size: 65px;
+                font-weight: 700;
+    
+            }
+
         }
 
     }
@@ -337,6 +378,14 @@
     &__objetivos{
 
         grid-area: area2;
+        background: rgb(241,241,241);
+        background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
+
+        .subtitulo-taller{
+
+            margin-top: 0px;
+
+        }
 
         &--flex1{
 
@@ -362,6 +411,7 @@
 
             display: flex;
             justify-content: space-evenly;
+            margin-bottom: 80px;
 
             .imagenObjetivo{
 
@@ -383,7 +433,10 @@
     &__bioTaller{
 
         grid-area: area3;
-        background-color: $bgColorNav;
+        background: rgb(36,161,156);
+        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+        color: $bgColor;
+        margin-bottom: 100px;
 
         &--imagen{
 
@@ -396,12 +449,46 @@
     &__bioEquipo{
 
         grid-area: area4;
+        border-radius: 10px;
+        box-shadow: $bxshadow;
+        text-align: center;
+        margin: 30px;
 
-        &--imagen{
+        .caja-lider{
 
-            @include img-size(100%);
+            margin: 0 auto;
             margin-bottom: 40px;
-            
+
+        }
+
+        &--flex1{
+
+            display: flex;
+            margin-left: 280px;
+            margin-bottom: 40px;
+            gap: 40px;
+
+            .imagenObjetivo{
+
+                @include imgNosotrosEquipo;
+
+            }
+
+        }
+
+        &--flex2{
+
+            display: flex;
+            margin-left: 280px;
+            margin-bottom: 40px;
+            gap: 40px;
+
+            .imagenObjetivo{
+
+                @include imgNosotrosEquipo;
+
+            }
+
         }
     }
 }
@@ -414,141 +501,133 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "area1 area1"
-        "area2 area3"
-        "area4 area5"
-        "area6 area6"
+        "area2 area2"
+        "area3 area3"
+        "area4 area4"
         ;
+
+    .clientesBienvenida{
+
+        grid-area: area1;
+
+        &__img{
+
+            // Optimizar
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+
+        }
+
+        &__box{
+
+            // Optimizar
+            @extend .bienvenida__box;
+            top: 250px;
+
+            &--titulo{
+
+                font-size: 65px;
+                font-weight: 700;
+    
+            }
+
+        }
+
+    }
 
     &__video{
 
-        grid-area: area1;
-        margin: 20px;
-        text-align: center;
-
-    }
-
-    &__op1{
-
         grid-area: area2;
-        display: flex;
-        @include tarjeta(yellow);
-
-        &--imagen{
-
-            @extend .imgTarjetaClientes;
-
-        }
-
-        &--imagen:hover{
-
-            transform: scale(1.2, 1.2); 
-
-        }
-
-        &--p{
-
-            margin-left: 35px;
-            margin-top: 50px;
-            font-style: map-get($mapaRRSSClientesEstilo, cita);
-        }
-
-        @each $boton, $color in $mapaRRSSClientesBotones {
-
-            .botonesRRSS--#{$boton} {
-                background-color: $color;
-            }
-            
-        }
+        text-align: center;
+        background: rgb(241,241,241);
+        background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
+        padding: 100px;
 
     }
 
-    &__op2{
-        
+    .principalClientesTarjeta{
+
         grid-area: area3;
-        display: flex;
-        @include tarjeta(turquoise);
+        background: rgb(36,161,156);
+        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+        padding: 100px;
 
-        &--imagen{
+        .subtClientes{
 
-            @extend .imgTarjetaClientes;
-
-        }
-
-        &--imagen:hover{
-
-            transform: scale(1.2, 1.2); 
+            color: $bgColor;
 
         }
 
-        &--p{
-
-            margin-left: 35px;
-            margin-top: 50px;
-            font-style: map-get($mapaRRSSClientesEstilo, cita);
-        }
-
-        @each $boton, $color in $mapaRRSSClientesBotones {
-
-            .botonesRRSS--#{$boton} {
-                background-color: $color;
+        &__flex1{
+            
+            display: flex;
+    
+            .cardCliente{
+    
+                display: flex;
+    
+                @include tarjeta($bgColor);
+        
+                &__imagen{
+        
+                    @extend .imgTarjetaClientes;
+        
+                }
+        
+                &__p{
+        
+                    margin-left: 35px;
+                    margin-top: 50px;
+                    font-style: map-get($mapaRRSSClientesEstilo, cita);
+                }
+        
+                @each $boton, $color in $mapaRRSSClientesBotones {
+        
+                    .botonesRRSS--#{$boton} {
+                        background-color: $color;
+                    }
+                    
+                }
             }
     
         }
+    
+        &__flex2{
+            
+            display: flex;
+    
+            .cardCliente2{
+    
+                display: flex;
+    
+                @include tarjeta($bgColor);
+        
+                &__imagen{
+        
+                    @extend .imgTarjetaClientes;
+        
+                }
+    
+                &__p{
+        
+                    margin-left: 35px;
+                    margin-top: 50px;
+                    font-style: map-get($mapaRRSSClientesEstilo, cita);
+                }
+        
+                @each $boton, $color in $mapaRRSSClientesBotones {
+        
+                    .botonesRRSS--#{$boton} {
+                        background-color: $color;
+                    }
+                    
+                }
+    
+            };
     }
 
-    &__op3{
-        
-        grid-area: area4;
-        display: flex;
-        @include tarjeta(grey);
 
-        &--imagen{
-
-            @extend .imgTarjetaClientes;
-
-        }
-
-        &--imagen:hover{
-
-            transform: scale(1.2, 1.2); 
-
-        }
-
-        &--p{
-
-            margin-left: 35px;
-            margin-top: 50px;
-            font-style: map-get($mapaRRSSClientesEstilo, cita);
-        }
-
-    }
-
-    &__op4{
-        
-        grid-area: area5;
-        display: flex;
-        @include tarjeta(pink);
-
-        &--imagen{
-
-            @extend .imgTarjetaClientes
-
-        }
-
-        &--imagen:hover{
-
-            transform: scale(1.2, 1.2); 
-
-        }
-
-        &--p{
-
-            margin-left: 35px;
-            margin-top: 50px;
-            font-style: map-get($mapaRRSSClientesEstilo, cita);
-        }
-
-        
     }
 
     @each $boton, $color in $mapaRRSSClientesBotones {
@@ -561,7 +640,13 @@
 
     &__patrocinio{
         
-        grid-area: area6;
+        grid-area: area4;
+
+        .subtPatrocinio{
+
+            margin-bottom: 75px;
+
+        }
 
     }
 
@@ -604,7 +689,6 @@
 };
 
 
-
 // CSS - Contacto
 
 .principalContacto{
@@ -614,18 +698,28 @@
     grid-template-areas: 
         "area1 area2";
 
+    margin-top: 100px;
+    margin-bottom: 100px;
+
     &__formulario{
 
-        grid-area: area1;
+        grid-area: area2;
         text-align: center;
         border: 1px solid;
-        background-color: #e4faea;
+        background-color: $bgColorNav;
+        color: $bgColor;
         border-radius: 10px;
         width: 60%;
         height: auto;
         margin: 0 auto; //Margen para alinear en contenedor
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .subtituloFormulario{
+
+            margin: 30px;
+
+        }
 
         .botonesFormulario{
 
@@ -637,9 +731,35 @@
 
     &__mapa{
 
-        grid-area: area2;
+        grid-area: area1;
         text-align: center;
+        margin-top: 40px;
         margin-bottom: 20px;
+
+        &--iconos{
+
+            display: flex;
+            justify-content: space-around;
+
+            svg{
+
+                margin: 0 auto;
+
+            }
+
+            p{
+
+                margin: 15px;
+
+            }
+
+        }
+
+        iframe{
+
+            margin-top: 50px;
+
+        }
 
     }
 

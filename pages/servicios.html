@@ -29,13 +29,16 @@
                   <a class="navegacion__enlace" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                  <a class="navegacion__enlace" href="./servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navegacion__enlace" href="clientes.html">Clientes</a>
+                  <a class="navegacion__enlace" href="./nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                  <a class="navegacion__enlace" href="./clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navegacion__enlace" href="./contacto.html">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -46,11 +49,11 @@
   <main class="principalServicios">
 
     <section class="serviciosBienvenida">
+      <img class="serviciosBienvenida__imagen" src="../img/guitarra-servicios.jpg" alt="guitarras">
       <div class="serviciosBienvenida__box">
         <h1 class="serviciosBienvenida__box--titulo">Nuestros Servicios</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nisi ipsa minus est, quis earum omnis provident dolores amet, nobis totam dolorem.</p>
       </div>
-      <img class="serviciosBienvenida__imagen" src="../img/guitarra-servicios.jpg" alt="guitarras">
     </section>
 
     <section class="serviciosDiseñoConstruccion">
@@ -91,6 +94,41 @@
             Consectetur reprehenderit hic cum tempore saepe labore.</p>
       </div>
     </section>
+
+    <section class="serviciosGaleria">
+      <h2 class="subtitulo">Nuestros Ultimos Trabajos</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/guitarraElectrica-servicio.jpg" class="d-block imgCarouselServicios" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/ukelele-servicio.jpg" class="d-block imgCarouselServicios" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/violin-servicio.jpg" class="d-block imgCarouselServicios" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/piano-servicio.jpg" class="d-block imgCarouselServicios" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
   </main>
   
   <footer class="redesFooter">
