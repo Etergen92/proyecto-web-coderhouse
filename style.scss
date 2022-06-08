@@ -9,165 +9,132 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%; 
+    grid-template-areas: 
+        "area0"
+        "area1"
+        "area2"
+        "area3"
+    ;
 
-}
+    .barraNavegacion{
 
-.bienvenida{
-
-    text-align: center;
-
-    &__img{
-
-        width: 100%;
-        height: 750px;
-        object-fit: cover;
-        position: relative;
-    }
-
-    &__box{
-
-        background-color: $bgColorNav;
-        opacity: 0.7;
-        color: $bgColor;
-        width: 500px;
-        height: 550px;
-        padding: 20px;
-        position: absolute;
-        top: 200px;
-        left: 180px;
-
-        &--subtitulo{
-
-            margin-top: 85px;
-            font-size: 25px;
-            font-weight: 200;
-
-        }
-
-        &--titulo{
-
-            font-size: 65px;
-            font-weight: 700;
-
-        }
-
-        &--parrafo{
-
-            margin-top: 25px; 
-            font-style: italic;
-            font-weight: 300;
-
-        }
-
-        &--boton{
-
-            display: block;
-            margin: 0 auto;
-            margin-top: 65px;
-            padding: 10px;
-            border: none;
-            background-color: $bgColor;
-            color: $bgColorNav;
-
-        }
+        grid-area: area0;
 
     }
 
-}
+    .bienvenidaInicio{
 
-.historia{
+        grid-area: area1;
+        text-align: center;
 
-    &__flex{
+        &__img{
 
-        display: flex;
-        flex-direction: row;
-        color: $bgColor;
-        padding: 40px;
-        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
-        height: 650px;
+            @include bienvenidaBoxImg;
 
-        &--lista{
+        }
 
-            width: 40%;
+        &__box{
 
-            ul{
+            @include bienvenidaBox;
+            @include bienvenidaBoxParrafo;
+            
+            &--subtitulo{
 
-                margin-top: 60px;
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 200;
+
+            }
+
+            &--titulo{
+
+                font-size: 65px;
+                font-weight: 700;
+
+            }
+
+            &--enlace{
+
+                display: inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: $bgColor;
+                color: $bgColorNav;
+                text-decoration: none;
+                margin-top: 20px;
 
             }
 
         }
 
-        &--instrumentos{
+    }
+
+    .historiaInicio{
+
+        grid-area: area2;
+        background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+        color: $bgColor;
+        display: flex;
+
+        &__objetivos{
+
+            color: $bgColor;
+            width: 40%;
+            padding: 40px;
+            height: 650px;
+
+            &--lista{
+
+                ul{
+
+                    margin-top: 60px;
+
+                }
+
+            }
+
+            &--boton{
+
+                @extend .bienvenidaInicio__box--enlace;
+                display: block;
+                width: 90px;
+                margin: 0 auto;
+
+            }
+        }    
+
+        &__instrumentos{
 
             width: 60%;
-            display: grid;
-            gap: 55px;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "area1 area1"
-                "area2 area3"
-                "area4 area5"
-            ;
 
-            .instrumentoTitulo{
+            .flexInstrumentos1, .flexInstrumentos2{
 
-                grid-area: area1;
+                display: flex;
 
-            }
-
-            .instrumentoCuerda{
-
-                grid-area: area2;
-                margin: 0 auto;
-                
-            }
-
-            .instrumentoPerc{
-
-                grid-area: area3;
-                margin: 0 auto;
-                
-            }
-
-            .instrumentoCuerdaPerc{
-
-                grid-area: area4;
-                margin: 0 auto;
-                
-            }
-
-            .instrumentoMic{
-
-                grid-area: area5;
-                margin: 0 auto;
-                
             }
         }
-
+        
     }
 
-    &__video{
-
+    .historiaVideo{
+    
+        grid-area: area3;
         text-align: center;
         padding: 55px;
         margin: 25px;
-
+    
         &--iframe{
-
+    
             margin: 50px;
-
+    
         }
-
+    
+        &__parrafo{
+    
+            margin: 30px;
+        }
     }
-
-    &__parrafo{
-
-        margin: 30px;
-    }
-
-}
+}    
 
 // CSS - Servicios
 
@@ -176,12 +143,20 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
+        "area0"
         "area1"
         "area2"
         "area3"
         "area4"
+        "area5"
     ;
 
+    .barraNavegacion{
+
+        grid-area: area0;
+
+    }
+    
     .serviciosBienvenida{
 
         grid-area: area1;
@@ -189,7 +164,8 @@
 
         &__box{
             
-            @extend .bienvenida__box;
+            @include bienvenidaBox;
+            @include bienvenidaBoxParrafo;
             top: 90px;
 
             &--titulo{
@@ -203,9 +179,7 @@
         
         &__imagen{
             
-            width: 100%;
-            height: 750px;
-            object-fit: cover;
+            @include bienvenidaBoxImg;
              
         }
         
@@ -304,6 +278,8 @@
 
     .serviciosGaleria{
 
+        grid-area: area5;
+        margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 120px;
 
@@ -342,10 +318,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
+        "area0"
         "area1"
         "area2"
         "area3"
         "area4";
+
+    .barraNavegacion{
+
+        grid-area: area0;
+
+    }
 
     .nosotrosBienvenida{
 
@@ -353,15 +336,14 @@
         
         &__imagen{
 
-            width: 100%;
-            height: 750px;
-            object-fit: cover;
+            @include bienvenidaBoxImg;
 
         }
 
         &__box{
 
-            @extend .bienvenida__box;
+            @include bienvenidaBox;
+            @include bienvenidaBoxParrafo;
             top: 250px;
 
             &--titulo{
@@ -411,7 +393,7 @@
 
             display: flex;
             justify-content: space-evenly;
-            margin-bottom: 80px;
+            padding-bottom: 40px;
 
             .imagenObjetivo{
 
@@ -436,11 +418,17 @@
         background: rgb(36,161,156);
         background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
         color: $bgColor;
-        margin-bottom: 100px;
-
+        margin-bottom: 80px;
+    
         &--imagen{
 
             @include img-size(100%);
+
+        }
+
+        &--parrafo{
+
+            padding: 15px;
 
         }
 
@@ -464,9 +452,9 @@
         &--flex1{
 
             display: flex;
-            margin-left: 280px;
-            margin-bottom: 40px;
+            justify-content: center;
             gap: 40px;
+            margin-bottom: 20px;
 
             .imagenObjetivo{
 
@@ -479,8 +467,7 @@
         &--flex2{
 
             display: flex;
-            margin-left: 280px;
-            margin-bottom: 40px;
+            justify-content: center;
             gap: 40px;
 
             .imagenObjetivo{
@@ -498,31 +485,35 @@
 .principalClientes{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-        "area1 area1"
-        "area2 area2"
-        "area3 area3"
-        "area4 area4"
+        "area0"
+        "area1"
+        "area2"
+        "area3"
+        "area4"
         ;
+
+    .barraNavegacion{
+
+        grid-area: area0;
+
+    }
 
     .clientesBienvenida{
 
         grid-area: area1;
 
-        &__img{
+        &__imagen{
 
-            // Optimizar
-            width: 100%;
-            height: 750px;
-            object-fit: cover;
+            @include bienvenidaBoxImg;
 
         }
 
         &__box{
 
-            // Optimizar
-            @extend .bienvenida__box;
+            @include bienvenidaBox;
+            @include bienvenidaBoxParrafo;
             top: 250px;
 
             &--titulo{
@@ -542,7 +533,7 @@
         text-align: center;
         background: rgb(241,241,241);
         background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
-        padding: 100px;
+        padding: 90px;
 
     }
 
@@ -551,11 +542,11 @@
         grid-area: area3;
         background: rgb(36,161,156);
         background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
-        padding: 100px;
 
         .subtClientes{
 
             color: $bgColor;
+            font-size: 35px;
 
         }
 
@@ -579,16 +570,8 @@
         
                     margin-left: 35px;
                     margin-top: 50px;
-                    font-style: map-get($mapaRRSSClientesEstilo, cita);
                 }
         
-                @each $boton, $color in $mapaRRSSClientesBotones {
-        
-                    .botonesRRSS--#{$boton} {
-                        background-color: $color;
-                    }
-                    
-                }
             }
     
         }
@@ -613,29 +596,12 @@
         
                     margin-left: 35px;
                     margin-top: 50px;
-                    font-style: map-get($mapaRRSSClientesEstilo, cita);
+                    font-style: italic;
                 }
         
-                @each $boton, $color in $mapaRRSSClientesBotones {
-        
-                    .botonesRRSS--#{$boton} {
-                        background-color: $color;
-                    }
-                    
-                }
-    
             };
     }
 
-
-    }
-
-    @each $boton, $color in $mapaRRSSClientesBotones {
-
-        .botonesRRSS--#{$boton} {
-            background-color: $color;
-        }
-        
     }
 
     &__patrocinio{
@@ -645,6 +611,23 @@
         .subtPatrocinio{
 
             margin-bottom: 75px;
+
+        }
+
+        .carousel{
+
+            .carousel-control-prev-icon {
+
+                color: $bgColorNav;
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324A19C' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+            
+            }
+            
+            .carousel-control-next-icon {
+
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324A19C' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            
+            }
 
         }
 
@@ -665,29 +648,13 @@
 
     margin-left: 35px;
 
-    &--instagram{
+    &--instagram, &--spotify, &--youtube{
 
         padding: 3px;
-        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
+        border-radius: 10px;
 
     }
-
-    &--spotify{
-
-        padding: 3px;
-        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
-
-    }
-
-    &--youtube{
-
-        padding: 3px;
-        border-radius: map-get($mapaRRSSClientesEstilo, bordesRedondos);
-
-    }
-
 };
-
 
 // CSS - Contacto
 
