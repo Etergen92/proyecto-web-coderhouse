@@ -1,8 +1,121 @@
 // Media Queries Index
 
+@media screen and (max-width: 1200px){
+
+    // Index
+
+    .principalInicio{
+
+        .bienvenidaInicio{
+
+            &__box{
+                
+                left: 10px;
+                top: 85px;
+
+            }
+
+        }
+
+        .historiaInicio{
+    
+            &__objetivos{
+
+                padding: 5px;
+
+            }    
+    
+            &__instrumentos{
+    
+                padding: 5px;
+
+            }
+            
+        }
+
+    }
+
+    .principalServicios{
+    
+        .serviciosBienvenida{
+
+            &__box{
+                
+                left: 10px;
+                
+            }
+
+        }
+
+    }
+
+    // Nosotros
+
+    .principalNosotros{
+    
+        .nosotrosBienvenida{
+
+            &__box{
+                
+                left: 10px;
+                top: 85px;
+                
+            }
+
+        }
+
+
+    }
+
+    // Clientes
+
+    .principalClientes{
+    
+        .clientesBienvenida{
+
+            &__box{
+                
+                left: 10px;
+                top: 85px;
+                
+            }
+
+        }
+
+        .principalClientesTarjeta{
+
+            grid-area: area3;
+            background: rgb(36,161,156);
+            background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+    
+            &__flex1, &__flex2{
+                
+                flex-direction: column;
+                
+            }
+    
+        }
+
+    }
+
+    // Contacto
+
+    .principalContacto{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "area2" 
+            "area1";
+
+    }
+    
+
+}
+
 @media screen and (max-width: 600px) {
     
-    // Index Responsive
+    // Index
 
     .principalInicio{
 
@@ -50,7 +163,7 @@
         .historiaInicio{
     
             flex-direction: column;
-            background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+            background: linear-gradient(180deg, rgba(36,161,156,1) 95%, rgba(241,241,241,1) 100%);
 
             &__objetivos{
                 
@@ -58,7 +171,7 @@
                 padding: 20px;
                 height: auto;
                 background: rgb(241,241,241);
-                background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
+                background: linear-gradient(180deg, rgba(241,241,241,1) 95%, rgba(36,161,156,1) 100%);
                 color: black;
     
                 &--lista{
@@ -122,7 +235,7 @@
 
     }
 
-    // Servicio Responsive
+    // Servicios
 
     .principalServicios{
 
@@ -152,8 +265,9 @@
 
             grid-area: area2;
             color: black;
+            padding: 10px;
             background: rgb(241,241,241);
-            background: linear-gradient(180deg, rgba(241,241,241,1) 85%, rgba(36,161,156,1) 100%);
+            background: linear-gradient(180deg, rgba(241,241,241,1) 95%, rgba(36,161,156,1) 100%);
 
             .subtitulo{
 
@@ -185,8 +299,9 @@
     
             grid-area: area3;
             color: $bgColor;
+            padding: 10px;
             background: rgb(36,161,156);
-            background: linear-gradient(180deg, rgba(36,161,156,1) 85%, rgba(241,241,241,1) 100%);
+            background: linear-gradient(180deg, rgba(36,161,156,1) 95%, rgba(241,241,241,1) 100%);
 
             .subtitulo{
 
@@ -218,6 +333,7 @@
         .serviciosReparacion{
     
             grid-area: area4;
+            padding: 10px;
             background: rgb(241,241,241);
             color: black;
 
@@ -271,7 +387,7 @@
     }
     
 
-    // Nosotros Responsive
+    // Nosotros
 
     .principalNosotros{
 
@@ -410,7 +526,7 @@
     }
 
 
-    // Clientes Responsive
+    // Clientes
 
     .principalClientes{
 
@@ -459,7 +575,6 @@
 
             &__flex1, &__flex2{
 
-                flex-direction: column;
 
                 .cardCliente, .cardCliente2{
 
@@ -516,7 +631,7 @@
 
     }
 
-    // Contacto Responsive
+    // Contacto
 
     .principalContacto{
 

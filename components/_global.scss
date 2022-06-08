@@ -75,6 +75,8 @@ body{
 
 }
 
+// Caja de Bienvenida (Desktop y Responsive)
+
 @mixin bienvenidaBox{
 
     background-color: $bgColorNav;
@@ -84,7 +86,7 @@ body{
     height: 550px;
     padding: 20px;
     position: absolute;
-    top: 200px;
+    top: 90px;
     left: 180px;
 
 }
@@ -117,17 +119,6 @@ body{
     text-align: center;
     position: static;
     opacity: 1;
-
-}
-
-
-// Imagenes Nosotros
-
-@mixin img-size($width) {
-    
-    width: $width;
-    height: 700px;
-    object-fit: cover;
 
 }
 
@@ -275,5 +266,11 @@ body{
     width: 100%;
     height: auto;
     object-fit: cover;
+
+}
+
+.radio-formulario, .checkbox-formulario{
+
+    padding: 10px;
 
 }

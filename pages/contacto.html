@@ -50,30 +50,41 @@
         <div class="principalContacto__formulario">
             <h2 class="subtitulo">Contactanos</h2>
             <form action="" method="" enctype="">
-                <div class="">
-                    <label for="nombre">Nombre: </label>
+                <div class="datos-input">
+                    <label class="etiqueta-input" for="nombre">Nombre: </label>
                     <input type="text" name="nombre" id="nombre">
                 </div>
-                <div class="">
-                    <label for="nombre">Apellido: </label>
+                <div class="datos-input">
+                    <label class="etiqueta-input" for="nombre">Apellido: </label>
                     <input type="text" name="apellido" id="apellido">
                 </div>
-                <div class="">
-                    <label for="correo">E-mail: </label>
+                <div class="datos-input">
+                    <label class="etiqueta-input" for="correo">E-mail: </label>
                     <input type="email" name="correo" id="correo">
                 </div>
 
                 <div>
                     <h3 class="subtituloFormulario">Motivo de Contacto</h3>
 
-                    <label for="arreglo">Reparacion</label>
-                    <input type="radio" name="motivo-contacto" id="arreglo" value="arreglo">
+                    <div class="radio-formulario">
+                        <input type="radio" name="motivo-contacto" id="arreglo" value="arreglo">
+                        <label for="arreglo">Reparacion</label>
+                    </div>
+
+                    <div class="radio-formulario">
+                        <input type="radio" name="motivo-contacto" id="restauracion" value="restauracion">
+                        <label for="arreglo">Restauracion</label>
+                    </div>
                 
-                    <label for="construccion">Construccion</label>
-                    <input type="radio" name="motivo-contacto" id="construccion"value="construccion">
-                
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="motivo-contacto" id="otro" value="otro">
+                    <div class="radio-formulario">
+                        <input type="radio" name="motivo-contacto" id="construccion"value="construccion">
+                        <label for="construccion">Construccion</label>
+                    </div>
+
+                    <div class="radio-formulario">
+                        <input type="radio" name="motivo-contacto" id="otro" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
                 </div>
 
                 <div>
@@ -91,23 +102,31 @@
 
                 <div>
                     <h3 class="subtituloFormulario">Como nos conociste ?</h3> 
-                
-                    <label for="instagram">Instagram</label>
-                    <input type="checkbox" name="instagram" id="instagram" value="1">
-                
-                    <label for="facebook">Facebook</label>
-                    <input type="checkbox" name="facebook" id="facebook" value="2">
-                
-                    <label for="instagram">YouTube</label>
-                    <input type="checkbox" name="youtube" id="youtube" value="3">
-                
-                    <label for="otro">Otro</label>
-                    <input type="checkbox" name="otro" id="otro" value="4">    
+
+                        <div class="checkbox-formulario">
+                            <input type="checkbox" name="instagram" id="instagram" value="1">
+                            <label for="instagram">Instagram</label>
+                        </div>
+
+                        <div class="checkbox-formulario">
+                            <input type="checkbox" name="facebook" id="facebook" value="2">
+                            <label for="facebook">Facebook</label>
+                        </div>
+
+                        <div class="checkbox-formulario">
+                            <input type="checkbox" name="youtube" id="youtube" value="3">
+                            <label for="instagram">YouTube</label>
+                        </div>
+
+                        <div class="checkbox-formulario">
+                            <input type="checkbox" name="otro" id="otro" value="4">    
+                            <label for="otro">Otro</label>
+                        </div>    
                 </div>               
 
                 <div class="botonesFormulario">
-                    <input class="" type="submit" name="enviar" id="enviar">
-                    <input class="" type="reset" name="reestablecer" id="reestablecer">
+                    <input class="boton-diseño" type="submit" name="enviar" id="enviar">
+                    <input class="boton-diseño" type="reset" name="reestablecer" id="reestablecer">
                 </div>
             </form>
         </div>
