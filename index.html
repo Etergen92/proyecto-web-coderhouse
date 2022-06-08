@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="./mpcss/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700;900&display=swap" rel="stylesheet">
     <title>Lutheria | Le damos vida a tus Instrumentos Musicales</title>
     <meta name="description" content="Somos el taller de Lutheria mas antiguo y de mayor experiencia de la ciudad de Buenos Aires. Le devolvemos la vida a toda clase de instrumentos.">
     <meta name="keywords" content="taller, lutheria, luthier, Buenos Aires, instrumentos musicales, calidad">
-  </head>
-<body>
+</head>
+<body class="principalInicio">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="barraNavegacion navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <img class="logo" src="./img/logo.png" alt="Logo guitarra">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,6 +24,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav navegacion">
+            <li class="nav-item">
+              <a class="navegacion__enlace" href="./index.html">Inicio</a>
+            </li>
             <li class="nav-item">
               <a class="navegacion__enlace" href="./pages/servicios.html">Servicios</a>
             </li>
@@ -42,74 +45,78 @@
     </nav>
   </header>
 
-    <main class="principalInicio">
-        <section>
-            <div class="bienvenida">
-                <h1 class="subtitulo">Taller de Lutheria</h1>
-                <!--Imagen de taller-->
-                <div class="carouselInicio">
-                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/luthier.jpg" class="bienvenida__img" alt="Imagen de taller de Lutheria">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/luthier-3.jpg" class="bienvenida__img" alt="Imagen de taller de Lutheria">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/luthier-4.jpg" class="bienvenida__img" alt="Imagen de taller de Lutheria">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="foto-mobile bienvenida__img">
-                    <img src="img/luthier.jpg" class="bienvenida__img" alt="Imagen de taller de Lutheria">
-                  </div>
-                </div>
-        
-                <!--Breve historia del taller y descripcion de los servicios ofrecidos-->
-                  <p class="bienvenida__cita">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam dolorum possimus id mollitia incidunt enim, molestias facilis voluptatum 
-                      dolorem consequuntur rem expedita nesciunt voluptatem sed nostrum dolor! Vero, incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Doloribus odio minus ab quasi eius, commodi quo, aspernatur alias quisquam sint ad exercitationem labore similique veniam et facilis? At, ratione corporis?"
-                  </p>
-            </div>
-        </section>
-        
-        <section> 
-            <div class="historia">
-                <!-- Video Institucional -->
-                <h2 class="historia__titulo">Calidad garantizada para tus instrumentos musicales</h2>
-                
-                <!--Carrousel con imagenes de algunos trabajos realizados-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/biWk-QLWY7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="historia__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iusto dolorem quisquam officiis provident, aliquam corrupti reprehenderit molestias ex inventore! Illo a autem fuga? Totam tempore soluta quia dolores et?
-                Excepturi quas ipsam error aliquam deleniti. Harum cum itaque modi atque vitae eligendi id voluptatum? Suscipit blanditiis aspernatur ratione ipsum aut rem, eum dignissimos, vel fugiat iusto voluptatem quo debitis.
-                Quam molestiae dolor quis quaerat. Deserunt labore, quisquam, debitis temporibus error harum corrupti natus soluta aperiam, nihil totam eaque aut assumenda ratione tempora voluptatibus voluptatum nesciunt fugit eligendi odit velit!
-                Sapiente nobis veritatis in numquam quisquam esse. Quasi atque amet nam sint quaerat consectetur, fuga nihil placeat magnam accusamus sit. Quisquam fuga nam corrupti ipsa rem neque? Esse, suscipit expedita.</p>
-              </div>
-        </section>
-    </main>
-
-    
-  <footer class="redesFooter">
-      <div class="redesFooter__derechos">
-          <img class="logo" src="./img/logo.png" alt="Logo de guitarra">
-          <p class="redesFooter__derechos--p">Derechos Reservados 2022</p>
-      </div>    
-
-      <div class="redesFooter__logoRedSocial">
-          <a href="https://www.instagram.com/" target="_blank"><img class="logo-redes" src="./img/instagram-black_100099.png" alt="Logo Instagram"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img class="logo-redes" src="./img/facebook-logo.png" alt="Logo Facebook"></a>
-          <a href=""><img class="logo-redes" src="./img/whatsapp-logo.png" alt="Logo WhatsApp"></a>
-          <a href="https://www.youtube.com/" target="_blank"><img class="logo-redes" src="./img/youtube-logo.png" alt="Logo YouTube"></a>
+  <main>
+    <section class="bienvenidaInicio">
+      <img class="bienvenidaInicio__img" src="./img/luthier-5.jpg" alt="Imagen de luthier con guitarra">
+      <div class="bienvenidaInicio__box">
+        <h1 class="bienvenidaInicio__box--subtitulo">Taller de Lutheria</h1>
+        <h1 class="bienvenidaInicio__box--titulo">Pereyra Hnos.</h1>
+        <p class="bienvenidaInicio__box--parrafo">
+          "El corazón del hombre es un instrumento musical, que contiene una música grandiosa, dormida, pero está allí, esperando el momento apropiado para ser interpretada, expresada, cantada, danzada.
+          Y ahi estamos nosotros para acompañarte."
+        </p>
+        <a class="bienvenidaInicio__box--enlace"href="./pages/nosotros.html">Conocenos</a>
       </div>
+    </section>
+        
+  <section class="historiaInicio">  
+    <div class="historiaInicio__objetivos">
+      <h2 class="subtitulo">Calidad garantizada</h2>
+      <ul class="historiaInicio__objetivos--lista">
+        <li>Somos una de las mas antiguas y tradicionales casas de lutheria de la ciudad de Buenos Aires, con mas de 50 años de experiencia.</li>
+        <li>Contamos con el trabajo de los mejores profesionales del mundo de la lutheria, premiados y reconocidos alrededor de todo el mundo.</li>
+        <li>Trabajamos con materia prima cuidadosamente seleccionada para poder brindarte la mayor calidad y seguridad dentro del mercado de la música.</li>
+        <li>Contamos con el respaldo de las principales empresas de instrumentos musicales y de nuestros reconocidos clientes dentro del mundo de la música.</li>
+      </ul>
+      <a class="historiaInicio__objetivos--boton" href="./pages/servicios.html">Nuestros Servicios</a>
+    </div>
+
+    <div class="historiaInicio__instrumentos">
+      <h2 class="subtitulo">Trabajamos</h2>
+      <div class="flexInstrumentos1">
+        <img class="instrumentoCuerda logoInstrumento" src="./img/guitarra.svg" alt="Guitarra">
+        <img class="instrumentoPerc logoInstrumento" src="./img/bateria.svg" alt="Bateria">
+      </div>  
+      <div class="flexInstrumentos2">
+        <img class="instrumentoCuerdaPer logoInstrumento" src="./img/piano.svg" alt="Piano">
+        <img class="instrumentoMic logoInstrumento" src="./img/microfono.svg" alt="Microfono">
+      </div>  
+    </div> 
+  </section>
+
+  <section class="historiaVideo">
+      <h2 class="subtitulo">De y para Musicos</h2>
+      <iframe class="historiaVideo__iframe" width="860" height="515" src="https://www.youtube.com/embed/biWk-QLWY7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="historiaVideo__parrafo">"Comprometidos desde hace mas de 50 años con la música y los músicos, conociendo el detalle de la relación de estos con los instrumentos y 
+      dando lo mejor para poder brindarte la mejor experiencia músical de la mano de los mejores especialistas que conocen el trabajo y la vida detrás de cada uno de los instrumentos musicales
+      que llegan a nuestro hermoso taller, acompañado de la mas cálida atención."</p>
+  </section>
+  </main>
+
+  <footer class="redesFooter"> 
+      <div class="redesFooter__logoRedSocial">
+          <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram logo-redes" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg></a>
+          <a href="https://www.whatsapp.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp logo-redes" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+          </svg></a>
+          <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook logo-redes" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg></a>
+          <a href="https://www.youtube.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube logo-redes" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="5" width="18" height="14" rx="4" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg></a>
+      </div>
+      <p class="redesFooter__derechos">Derechos Reservados Lutheria Pereyra Hnos. | 2022</p>
   </footer>
 </body>
 </html>

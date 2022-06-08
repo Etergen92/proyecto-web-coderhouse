@@ -1,20 +1,22 @@
 .redesFooter{
 
     background-color: $bgColorNav;
-    display: flex;
-    justify-content: space-between;
-
-    &__derechos{
-
-        margin-left: 15px;
-        margin-top: 15px;
-        
-    }
 
     &__logoRedSocial{
 
-        margin-top: 75px;
-        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
 
     }
+
+    &__derechos{
+
+        text-align: center;
+        font-size: small;
+        margin-bottom: 0;
+        
+    }
+
 }
