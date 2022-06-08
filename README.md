@@ -6,4 +6,5 @@ Repositorio con mi proyecto de sitio Web, donde aplico los temas y conceptos apr
 
 1. HTML5
 2. CSS (Flexbox, GRID)
-3. SCSS
+3. Bootstrap
+4. SCSS
